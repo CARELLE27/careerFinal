@@ -178,6 +178,237 @@
         "required_files": ["README.md"]
       }
     }
+  }, 
+
+{
+    "model": "api.quete", "pk": 13,
+    "fields": {
+      "titre": "Quiz : C'est quoi une API REST ?",
+      "description": "Testez votre compréhension des APIs REST.",
+      "instructions": "Question : Que signifie REST dans le contexte des APIs ?\n\na) Real-time Execution and Service Transfer\nb) Representational State Transfer\nc) Remote Execution System Technology\nd) Rapid End-to-end Service Toolkit\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "🌐",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "b",
+        "explanation": "REST (Representational State Transfer) est un style d'architecture pour concevoir des APIs web utilisant les verbes HTTP (GET, POST, PUT, DELETE)."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 14,
+    "fields": {
+      "titre": "Quiz : Les verbes HTTP",
+      "description": "Maîtrisez les méthodes HTTP fondamentales.",
+      "instructions": "Question : Quel verbe HTTP utilise-t-on pour MODIFIER partiellement une ressource existante ?\n\na) POST\nb) PUT\nc) PATCH\nd) UPDATE\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "📡",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "PATCH modifie partiellement une ressource. PUT la remplace entièrement. POST crée une nouvelle ressource."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 15,
+    "fields": {
+      "titre": "Quiz : Git - commit et push",
+      "description": "Les bases absolues de Git.",
+      "instructions": "Question : Dans quel ordre effectue-t-on ces actions Git pour envoyer son code ?\n\na) push → commit → add\nb) add → push → commit\nc) commit → add → push\nd) add → commit → push\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "📦",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "d",
+        "explanation": "L'ordre correct est : git add (sélectionner les fichiers) → git commit (créer le snapshot) → git push (envoyer sur le serveur distant)."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 16,
+    "fields": {
+      "titre": "Quiz : C'est quoi un conteneur Docker ?",
+      "description": "Comprenez la différence entre conteneur et machine virtuelle.",
+      "instructions": "Question : Quelle est la principale différence entre un conteneur Docker et une machine virtuelle ?\n\na) Docker est plus lent qu'une VM\nb) Un conteneur partage le noyau OS de la machine hôte, une VM a son propre OS complet\nc) Docker ne peut tourner que sur Linux\nd) Une VM est plus légère qu'un conteneur\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "🐳",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "b",
+        "explanation": "Un conteneur partage le noyau (kernel) de l'OS hôte → il est léger et démarre en secondes. Une VM virtualise un OS entier → plus lourde mais plus isolée."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 17,
+    "fields": {
+      "titre": "Quiz : Base de données - clé primaire",
+      "description": "Maîtrisez les concepts de base des BDD relationnelles.",
+      "instructions": "Question : Qu'est-ce qu'une clé primaire (PRIMARY KEY) dans une base de données relationnelle ?\n\na) Le mot de passe d'accès à la base\nb) Un identifiant unique qui identifie chaque ligne d'une table\nc) La première colonne obligatoire de toute table\nd) Une clé qui relie deux tables entre elles\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "🗄️",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "b",
+        "explanation": "La clé primaire est un identifiant unique (souvent 'id') qui permet d'identifier chaque enregistrement de façon unique dans une table."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 18,
+    "fields": {
+      "titre": "Quiz : C'est quoi JWT ?",
+      "description": "Comprenez le système d'authentification par token.",
+      "instructions": "Question : JWT signifie JSON Web Token. Dans quel cas l'utilise-t-on principalement ?\n\na) Pour stocker des données en base\nb) Pour chiffrer les mots de passe\nc) Pour authentifier un utilisateur sans session côté serveur\nd) Pour compresser des fichiers JSON\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "🔑",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "JWT permet l'authentification stateless : le serveur génère un token signé, le client le stocke et l'envoie à chaque requête. Pas besoin de session côté serveur."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 19,
+    "fields": {
+      "titre": "Quiz : Frontend - React",
+      "description": "Les bases de React.",
+      "instructions": "Question : Dans React, qu'est-ce qu'un 'state' (état) ?\n\na) Le fichier CSS du composant\nb) Une variable dont le changement déclenche un re-rendu du composant\nc) La liste des props reçues par un composant\nd) Le nom du fichier du composant\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "⚛️",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "b",
+        "explanation": "Le state est une variable locale au composant. Quand il change via setState ou useState, React re-rend automatiquement le composant avec les nouvelles valeurs."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 20,
+    "fields": {
+      "titre": "Quiz : Linux - commandes de base",
+      "description": "Maîtrisez les commandes Linux essentielles.",
+      "instructions": "Question : Quelle commande Linux permet de voir le contenu d'un fichier texte directement dans le terminal ?\n\na) open fichier.txt\nb) read fichier.txt\nc) cat fichier.txt\nd) show fichier.txt\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "🐧",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "cat (concatenate) affiche le contenu d'un fichier dans le terminal. Autres commandes utiles : ls (lister), cd (changer dossier), mkdir (créer dossier), rm (supprimer)."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 21,
+    "fields": {
+      "titre": "Créer votre profil GitHub complet",
+      "description": "Un profil GitHub soigné est votre carte de visite professionnelle.",
+      "instructions": "1. Connectez-vous sur github.com\n2. Allez dans Settings → Profile\n3. Renseignez : Photo de profil, Bio (2-3 phrases sur vous), Localisation\n4. Créez un repo spécial qui porte EXACTEMENT votre nom d'utilisateur GitHub\n   (ex: si votre username est 'jean-dupont', créez un repo 'jean-dupont')\n5. Ce repo apparaîtra comme README sur votre profil\n6. Soumettez votre nom d'utilisateur GitHub ci-dessous\n\nNote : Votre compte doit avoir une bio pour être validé",
+      "points": 40,
+      "type_quete": "github_repo",
+      "icone": "👤",
+      "difficulte": 1,
+      "validation_config": {}
+    }
+  },
+  {
+    "model": "api.quete", "pk": 22,
+    "fields": {
+      "titre": "Créer un repo avec un README bien rédigé",
+      "description": "Un bon README c'est la première chose que voient les recruteurs.",
+      "instructions": "1. Créez un repo GitHub public\n2. Ajoutez un fichier README.md avec :\n   - Titre du projet avec emoji\n   - Description en 2-3 phrases\n   - Section 'Technologies utilisées'\n   - Section 'Comment lancer le projet'\n3. Le README doit faire au moins 10 lignes\n4. Soumettez le nom du repo",
+      "points": 35,
+      "type_quete": "github_file",
+      "icone": "📖",
+      "difficulte": 1,
+      "validation_config": {
+        "required_files": ["README.md"]
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 23,
+    "fields": {
+      "titre": "Faire vos 3 premiers commits",
+      "description": "Pratiquez le workflow Git de base : add, commit, push.",
+      "instructions": "1. Créez un nouveau repo GitHub public\n2. Clonez-le sur votre machine\n3. Créez un fichier index.html simple\n4. Faites un commit : 'feat: add index.html'\n5. Modifiez le fichier, faites un 2ème commit : 'feat: update content'\n6. Ajoutez un style.css, faites un 3ème commit : 'feat: add stylesheet'\n7. Pushez tout sur GitHub\n8. Soumettez le nom du repo",
+      "points": 30,
+      "type_quete": "github_commit",
+      "icone": "🌱",
+      "difficulte": 1,
+      "validation_config": {"min_commits": 3}
+    }
+  },
+  {
+    "model": "api.quete", "pk": 24,
+    "fields": {
+      "titre": "Soumettre votre profil LinkedIn",
+      "description": "LinkedIn est le réseau professionnel incontournable pour les développeurs.",
+      "instructions": "1. Créez ou complétez votre profil LinkedIn\n2. Assurez-vous d'avoir : Photo, Titre (ex: 'Étudiant développeur B3'), Formation, Au moins une expérience ou projet\n3. Soumettez l'URL de votre profil LinkedIn\n   (ex: https://www.linkedin.com/in/votre-nom/)",
+      "points": 45,
+      "type_quete": "url_submit",
+      "icone": "💼",
+      "difficulte": 1,
+      "validation_config": {
+        "url_must_contain": "linkedin.com/in/",
+        "check_accessible": false
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 25,
+    "fields": {
+      "titre": "Quiz : C'est quoi le DevOps ?",
+      "description": "Comprenez la philosophie DevOps.",
+      "instructions": "Question : Quelle est la principale philosophie du DevOps ?\n\na) Séparer strictement les équipes développement et opérations\nb) Automatiser uniquement les tests\nc) Rapprocher les équipes dev et ops pour livrer plus vite et de façon fiable\nd) Remplacer les développeurs par des outils automatiques\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "♾️",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "DevOps = Development + Operations. L'objectif est de casser les silos entre dev et ops pour livrer du logiciel plus rapidement, plus souvent et de façon plus fiable grâce à l'automatisation et la collaboration."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 26,
+    "fields": {
+      "titre": "Quiz : CSS - le modèle de boîte",
+      "description": "Maîtrisez le box model CSS.",
+      "instructions": "Question : Dans le modèle de boîte CSS (box model), dans quel ordre se trouvent les couches de l'intérieur vers l'extérieur ?\n\na) content → border → padding → margin\nb) content → margin → padding → border\nc) content → padding → border → margin\nd) padding → content → border → margin\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 20,
+      "type_quete": "quiz",
+      "icone": "🎨",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "De l'intérieur vers l'extérieur : content (contenu) → padding (espace intérieur) → border (bordure) → margin (espace extérieur)."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 27,
+    "fields": {
+      "titre": "Partager un projet sur GitHub avec 10 commits",
+      "description": "Montrez que vous travaillez régulièrement et committez souvent.",
+      "instructions": "1. Créez ou choisissez un repo GitHub existant\n2. Travaillez sur un petit projet (calculatrice, to-do list, page web...)\n3. Faites au moins 10 commits avec des messages clairs et descriptifs\n4. Chaque commit doit représenter une vraie étape de travail\n5. Soumettez le nom du repo",
+      "points": 60,
+      "type_quete": "github_commit",
+      "icone": "🏋️",
+      "difficulte": 2,
+      "validation_config": {"min_commits": 10}
+    }
   },
 
   {"model": "api.competence", "pk": 1,  "fields": {"nom": "HTML/CSS",      "categorie": "frontend", "niveau_requis": 1}},
@@ -192,4 +423,19 @@
   {"model": "api.competence", "pk": 10, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis": 2}},
   {"model": "api.competence", "pk": 11, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis": 2}},
   {"model": "api.competence", "pk": 12, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis": 4}}
+  {"model": "api.competence", "pk": 13,  "fields": {"nom": "HTML/CSS",      "categorie": "frontend", "niveau_requis":>
+  {"model": "api.competence", "pk": 14,  "fields": {"nom": "JavaScript",    "categorie": "frontend", "niveau_requis":>
+  {"model": "api.competence", "pk": 15,  "fields": {"nom": "React",         "categorie": "frontend", "niveau_requis":>
+  {"model": "api.competence", "pk": 16,  "fields": {"nom": "Python",        "categorie": "backend",  "niveau_requis":>
+  {"model": "api.competence", "pk": 17,  "fields": {"nom": "Django",        "categorie": "backend",  "niveau_requis":>
+  {"model": "api.competence", "pk": 18,  "fields": {"nom": "Node.js",       "categorie": "backend",  "niveau_requis":>
+  {"model": "api.competence", "pk": 19,  "fields": {"nom": "Docker",        "categorie": "devops",   "niveau_requis":>
+  {"model": "api.competence", "pk": 20,  "fields": {"nom": "Kubernetes",    "categorie": "devops",   "niveau_requis":>
+  {"model": "api.competence", "pk": 21,  "fields": {"nom": "Git",           "categorie": "devops",   "niveau_requis":>
+  {"model": "api.competence", "pk": 22, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis":>
+  {"model": "api.competence", "pk": 23, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis":>
+  {"model": "api.competence", "pk": 24, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis":>
+  {"model": "api.competence", "pk": 25, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis":>
+  {"model": "api.competence", "pk": 26, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis":>
+  {"model": "api.competence", "pk": 27, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis":>
 ]
