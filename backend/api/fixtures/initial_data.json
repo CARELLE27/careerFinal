@@ -422,20 +422,20 @@
   {"model": "api.competence", "pk": 9,  "fields": {"nom": "Git",           "categorie": "devops",   "niveau_requis": 1}},
   {"model": "api.competence", "pk": 10, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis": 2}},
   {"model": "api.competence", "pk": 11, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis": 2}},
-  {"model": "api.competence", "pk": 12, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis": 4}}
-  {"model": "api.competence", "pk": 13,  "fields": {"nom": "HTML/CSS",      "categorie": "frontend", "niveau_requis":>
-  {"model": "api.competence", "pk": 14,  "fields": {"nom": "JavaScript",    "categorie": "frontend", "niveau_requis":>
-  {"model": "api.competence", "pk": 15,  "fields": {"nom": "React",         "categorie": "frontend", "niveau_requis":>
-  {"model": "api.competence", "pk": 16,  "fields": {"nom": "Python",        "categorie": "backend",  "niveau_requis":>
-  {"model": "api.competence", "pk": 17,  "fields": {"nom": "Django",        "categorie": "backend",  "niveau_requis":>
-  {"model": "api.competence", "pk": 18,  "fields": {"nom": "Node.js",       "categorie": "backend",  "niveau_requis":>
-  {"model": "api.competence", "pk": 19,  "fields": {"nom": "Docker",        "categorie": "devops",   "niveau_requis":>
-  {"model": "api.competence", "pk": 20,  "fields": {"nom": "Kubernetes",    "categorie": "devops",   "niveau_requis":>
-  {"model": "api.competence", "pk": 21,  "fields": {"nom": "Git",           "categorie": "devops",   "niveau_requis":>
-  {"model": "api.competence", "pk": 22, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis":>
-  {"model": "api.competence", "pk": 23, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis":>
-  {"model": "api.competence", "pk": 24, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis":>
-  {"model": "api.competence", "pk": 25, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis":>
-  {"model": "api.competence", "pk": 26, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis":>
-  {"model": "api.competence", "pk": 27, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis":>
+  {"model": "api.competence", "pk": 12, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis": 4}},
+  {"model": "api.competence", "pk": 13,  "fields": {"nom": "HTML/CSS",      "categorie": "frontend", "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 14,  "fields": {"nom": "JavaScript",    "categorie": "frontend", "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 15,  "fields": {"nom": "React",         "categorie": "frontend", "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 16,  "fields": {"nom": "Python",        "categorie": "backend",  "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 17,  "fields": {"nom": "Django",        "categorie": "backend",  "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 18,  "fields": {"nom": "Node.js",       "categorie": "backend",  "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 19,  "fields": {"nom": "Docker",        "categorie": "devops",   "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 20,  "fields": {"nom": "Kubernetes",    "categorie": "devops",   "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 21,  "fields": {"nom": "Git",           "categorie": "devops",   "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 22, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 23, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 24, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 25, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 26, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 27, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis": 1}}
 ]
