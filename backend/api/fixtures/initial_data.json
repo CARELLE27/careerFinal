@@ -1,0 +1,195 @@
+[
+  {
+    "model": "api.quete", "pk": 1,
+    "fields": {
+      "titre": "Créer votre premier repo GitHub public",
+      "description": "Créez un repository public sur GitHub avec une description et un README.",
+      "instructions": "1. Allez sur github.com et créez un nouveau repository\n2. Nommez-le comme vous voulez (ex: mon-premier-repo)\n3. Ajoutez une description (obligatoire pour la validation)\n4. Cochez 'Add a README file'\n5. Rendez-le PUBLIC\n6. Soumettez le nom du repo ci-dessous",
+      "points": 50,
+      "type_quete": "github_repo",
+      "icone": "🐙",
+      "difficulte": 1,
+      "validation_config": {}
+    }
+  },
+  {
+    "model": "api.quete", "pk": 2,
+    "fields": {
+      "titre": "Faire au moins 5 commits sur un projet",
+      "description": "Prouvez que vous pratiquez le versioning en faisant 5 commits minimum sur un repo.",
+      "instructions": "1. Choisissez un repo GitHub existant (ou créez-en un)\n2. Faites au moins 5 commits avec des messages clairs\n3. Exemple de bons messages : 'feat: add login page', 'fix: correct typo in README'\n4. Soumettez le nom du repo",
+      "points": 75,
+      "type_quete": "github_commit",
+      "icone": "📝",
+      "difficulte": 1,
+      "validation_config": {"min_commits": 5}
+    }
+  },
+  {
+    "model": "api.quete", "pk": 3,
+    "fields": {
+      "titre": "Containeriser une application avec Docker",
+      "description": "Créez un projet avec un Dockerfile et un docker-compose.yml fonctionnels.",
+      "instructions": "1. Créez un repo GitHub public\n2. Ajoutez au moins : Dockerfile, docker-compose.yml, README.md\n3. Le README doit expliquer comment lancer le projet\n4. Soumettez le nom du repo",
+      "points": 150,
+      "type_quete": "github_file",
+      "icone": "🐳",
+      "difficulte": 3,
+      "validation_config": {
+        "required_files": ["Dockerfile", "docker-compose.yml", "README.md"]
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 4,
+    "fields": {
+      "titre": "Quiz : Les bases de Docker",
+      "description": "Prouvez que vous maîtrisez les concepts fondamentaux de Docker.",
+      "instructions": "Question : Quelle commande permet de lancer tous les services définis dans un docker-compose.yml ?\n\na) docker run\nb) docker compose up\nc) docker start\nd) docker build\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 30,
+      "type_quete": "quiz",
+      "icone": "🧠",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "b",
+        "explanation": "docker compose up lance tous les services définis dans docker-compose.yml. Avec --build il reconstruit les images."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 5,
+    "fields": {
+      "titre": "Quiz : HTTP et REST API",
+      "description": "Testez vos connaissances sur les APIs REST.",
+      "instructions": "Question : Quel code HTTP retourne-t-on quand une ressource est créée avec succès ?\n\na) 200 OK\nb) 204 No Content\nc) 201 Created\nd) 301 Moved\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 30,
+      "type_quete": "quiz",
+      "icone": "🌐",
+      "difficulte": 1,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "201 Created est le code standard pour indiquer qu'une ressource a été créée avec succès suite à un POST."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 6,
+    "fields": {
+      "titre": "Quiz : Git avancé",
+      "description": "Maîtrisez les concepts avancés de Git.",
+      "instructions": "Question : Quelle commande Git permet de fusionner une branche en créant toujours un commit de merge (sans fast-forward) ?\n\na) git merge\nb) git merge --no-ff\nc) git rebase\nd) git cherry-pick\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 40,
+      "type_quete": "quiz",
+      "icone": "🔀",
+      "difficulte": 2,
+      "validation_config": {
+        "answer": "b",
+        "explanation": "--no-ff (no fast-forward) force la création d'un commit de merge même si un fast-forward est possible. Utile pour garder l'historique des branches."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 7,
+    "fields": {
+      "titre": "Déployer une application en ligne",
+      "description": "Déployez votre application sur un hébergeur et partagez l'URL publique.",
+      "instructions": "1. Déployez votre application sur un hébergeur (Render, Railway, Vercel, etc.)\n2. Vérifiez que l'URL est accessible depuis n'importe quel navigateur\n3. Soumettez l'URL complète (ex: https://mon-app.render.com)",
+      "points": 200,
+      "type_quete": "url_submit",
+      "icone": "🚀",
+      "difficulte": 3,
+      "validation_config": {
+        "check_accessible": true
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 8,
+    "fields": {
+      "titre": "Créer un pipeline CI/CD GitLab",
+      "description": "Configurez un pipeline GitLab CI avec au moins 2 stages qui passent.",
+      "instructions": "1. Créez un repo GitLab (pas GitHub cette fois)\n2. Ajoutez un fichier .gitlab-ci.yml avec au moins 2 stages\n3. Vérifiez que le pipeline passe (badge vert)\n4. Soumettez l'URL de votre repo GitLab",
+      "points": 175,
+      "type_quete": "url_submit",
+      "icone": "⚙️",
+      "difficulte": 3,
+      "validation_config": {
+        "url_must_contain": "gitlab.com",
+        "check_accessible": false
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 9,
+    "fields": {
+      "titre": "Contribuer à un projet open source",
+      "description": "Faites une Pull Request sur un projet open source et soumettez le lien.",
+      "instructions": "1. Trouvez un projet open source sur GitHub\n2. Forkez-le et faites une modification utile (correction de bug, doc, feature)\n3. Ouvrez une Pull Request\n4. Soumettez l'URL de votre Pull Request\nNote : La PR n'a pas besoin d'être acceptée, juste ouverte et pertinente",
+      "points": 250,
+      "type_quete": "url_submit",
+      "icone": "⭐",
+      "difficulte": 3,
+      "validation_config": {
+        "url_must_contain": "github.com",
+        "check_accessible": false
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 10,
+    "fields": {
+      "titre": "Présenter un projet devant l'équipe",
+      "description": "Présentez un projet technique de 5 minutes à votre équipe ou formateur.",
+      "instructions": "1. Préparez une présentation de 5 minutes d'un projet technique\n2. Présentez devant votre équipe ou formateur\n3. Décrivez ci-dessous ce que vous avez présenté et ce que vous avez appris\n(Votre formateur validera cette quête)",
+      "points": 100,
+      "type_quete": "admin_review",
+      "icone": "🎤",
+      "difficulte": 2,
+      "validation_config": {}
+    }
+  },
+  {
+    "model": "api.quete", "pk": 11,
+    "fields": {
+      "titre": "Quiz : Kubernetes - Les bases",
+      "description": "Testez vos connaissances sur Kubernetes.",
+      "instructions": "Question : Dans Kubernetes, quel objet est responsable de maintenir un nombre défini de réplicas d'un Pod en fonctionnement ?\n\na) Service\nb) Ingress\nc) Deployment\nd) ConfigMap\n\nRépondez avec la lettre uniquement (a, b, c ou d)",
+      "points": 50,
+      "type_quete": "quiz",
+      "icone": "☸️",
+      "difficulte": 2,
+      "validation_config": {
+        "answer": "c",
+        "explanation": "Un Deployment gère le cycle de vie des Pods et garantit qu'un nombre défini de réplicas sont toujours en cours d'exécution."
+      }
+    }
+  },
+  {
+    "model": "api.quete", "pk": 12,
+    "fields": {
+      "titre": "Créer un projet avec README professionnel",
+      "description": "Votre README doit contenir : description, installation, usage, et architecture.",
+      "instructions": "1. Créez ou améliorez un repo GitHub\n2. Votre README.md doit contenir au minimum :\n   - Description du projet\n   - Instructions d'installation\n   - Comment utiliser le projet\n   - Stack technique utilisée\n3. Le repo doit avoir un README.md, un Dockerfile ou package.json\n4. Soumettez le nom du repo",
+      "points": 80,
+      "type_quete": "github_file",
+      "icone": "📖",
+      "difficulte": 2,
+      "validation_config": {
+        "required_files": ["README.md"]
+      }
+    }
+  },
+
+  {"model": "api.competence", "pk": 1,  "fields": {"nom": "HTML/CSS",      "categorie": "frontend", "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 2,  "fields": {"nom": "JavaScript",    "categorie": "frontend", "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 3,  "fields": {"nom": "React",         "categorie": "frontend", "niveau_requis": 3}},
+  {"model": "api.competence", "pk": 4,  "fields": {"nom": "Python",        "categorie": "backend",  "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 5,  "fields": {"nom": "Django",        "categorie": "backend",  "niveau_requis": 3}},
+  {"model": "api.competence", "pk": 6,  "fields": {"nom": "Node.js",       "categorie": "backend",  "niveau_requis": 3}},
+  {"model": "api.competence", "pk": 7,  "fields": {"nom": "Docker",        "categorie": "devops",   "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 8,  "fields": {"nom": "Kubernetes",    "categorie": "devops",   "niveau_requis": 5}},
+  {"model": "api.competence", "pk": 9,  "fields": {"nom": "Git",           "categorie": "devops",   "niveau_requis": 1}},
+  {"model": "api.competence", "pk": 10, "fields": {"nom": "PostgreSQL",    "categorie": "data",     "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 11, "fields": {"nom": "MongoDB",       "categorie": "data",     "niveau_requis": 2}},
+  {"model": "api.competence", "pk": 12, "fields": {"nom": "CI/CD GitLab",  "categorie": "devops",   "niveau_requis": 4}}
+]
